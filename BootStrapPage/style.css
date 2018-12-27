@@ -1,0 +1,42 @@
+
+.ab{
+    margin: 20px auto;
+    margin-top: 85px;
+}
+.ac{
+    background-color: #F7F7F7;
+}
+ul li{
+    display: block;
+    
+    
+}
+a{
+    color: black;
+    
+    
+}
+
+.pd{
+    padding: 40px;
+}
+.bod{
+    border-right: 2px white solid;
+    border-bottom: 2px white solid;
+
+    
+}
+.fd{
+    padding: 40px;
+    padding-top: px;
+}
+.btn-bd-download {
+    font-weight: 500;
+    color: #ffe484;
+    border-color: #ffe484;
+}
+.btn-bd-download:hover{
+   
+   background-color:  #ffe484;
+    
+}
