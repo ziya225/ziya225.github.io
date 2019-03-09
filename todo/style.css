@@ -1,0 +1,43 @@
+.b{
+    background: linear-gradient(rgba(0,0,50,0.5),rgba(0,0,50,0.5)),url(03.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.login-box{
+    max-width: 700px;
+    float: none;
+    margin: 150px auto;
+}
+.login-left{
+    background: rgba(211,211,211,0.5);
+    padding: 30px;
+    
+}
+.login-right{
+    background: #ffff;
+    padding: 30px;
+    
+}
+.form-control{
+    background-color: transparent !important;
+}
+.r{ 
+    background-color: aliceblue;
+   
+    border-radius: 50px;
+    
+    color: black;
+    font-weight: 1000;
+}
+.c{
+    color: aliceblue;
+}
+.ri{
+      position: absolute;
+
+  left: 900px;
+  font-size: 18px
+}
+.l{
+    color: aliceblue;
+}
