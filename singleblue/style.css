@@ -1,0 +1,109 @@
+::placeholder{
+	color:red;
+}
+
+
+
+body{
+
+	background:linear-gradient(to bottom right,#3B7AD3,blue,cyan);
+font-family: 'Nanum Gothic', sans-serif;
+	height: 100%;
+}
+
+li{
+	margin-left: 30px;
+}
+
+.rowHeight{
+	height: 100%;
+	
+	
+}
+
+
+
+.callToAction{
+	border-radius: 92px;
+	transition-duration: 0.4s;
+}
+
+
+.con2{
+	background-color: white;
+	height: 100%;
+	
+	
+}
+.con1{
+	background-color: aliceblue;
+	height:590px;
+	background-color: transparent;
+	align-items: center;
+	
+	
+	
+}
+
+
+
+.over{
+	position: relative;
+	top: -160px;
+	background-color: #fff;
+	width: 83%;
+	height: 100%;
+	margin-bottom: -100px;
+}
+
+.jmbtron h2{
+	font-weight: bolder;
+}
+
+.jmbtron{
+	background-color: white;
+	margin-bottom: -30px;
+}
+
+  
+        @media (max-width:575px)
+        {
+            .con1
+        {
+           
+         margin-bottom: 45vh;
+			
+            
+        }
+        }
+/*        sm*/
+        @media (min-width:576px) and (max-width:767px)
+        {
+            .con1
+        {
+             margin-bottom: 45vh;
+            
+        }
+        }
+
+.roundedimg
+{
+	border-radius: 50px;
+	border: 1px solid white;
+}
+
+
+.roundedimg + h6{
+	font-weight: bolder;
+}
+
+
+#scroll0,#scroll1,#scroll2{
+	animation-duration: 1.12s;
+}
+
+
+
+
+
+
