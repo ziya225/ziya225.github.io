@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--   pexels free imgs-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <meta name="description" content="This website give high quality programming course by IIT Alumini and this page tells you about dynamic programming and course we provide on dynamic programming and why it is neccessary">
+  <meta name="keywords" content="Competitive programming,coding,dynamic programmming,online course">
+  <meta name="author" content="Kashif Wahaj">
+    <link rel="icon" 
+      type="image/jpg" 
+      href="images/logo.jpg" style="border-radius: 20px;">
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+   
+   <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" >
+
+
+   
+    <link rel="stylesheet" href="style.css">
+   
+    <title>Dynamic Programming</title>
+   <style>
+	body
+		{
+/*
+			background: url(images/bg.png) no-repeat center center fixed;
+			-webkit-background-size: cover;
+			background-size: cover;
+*/
+			background:linear-gradient(to right bottom,#002f3d, #002a72);
+			font-family: 'Poppins', sans-serif;
+		}
+		
+		.nbc
+		{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 100%;
+			color: white;
+			
+		}
+		.nbc li a{
+			color: white;
+
+
+		}
+		.nbc li {
+			width: 190px;
+
+			
+		}
+		.hoverbest{
+			background-color: transparent;
+			border: 1px solid white;
+		}
+		.hoverbest a:hover{
+			background-color:rgba(0,0,0,0.3);
+			color: white;
+		}
+	   .go{
+		   font-size: 30px;
+		   
+		   color: #fff8e5;
+		   border: 2px solid #fff8e5;
+		 width: 60px;
+		   height: 60px;
+		   border-radius:40px;
+	   }
+	   
+	   .bg-cyan{
+		   background-color:#fff8e5;
+	   }
+	   .snlogo1{
+		   height: 40px;
+		   width:40px;
+		   background:url(images/fb.png);
+		   background-size: contain;
+		   border-radius: 20px;
+		   border: 2px solid white;
+	   }
+	     .snlogo2{
+		   height: 40px;
+		   width:40px;
+		   background:url(images/twitter.png);
+		   background-size: contain;
+		   border-radius: 20px;
+		   border: 2px solid white;
+	   }
+	   .text-hover-white:hover{
+	color: white;
+}
+	   .rowHeight{
+		   height: 19rem;
+		  
+	   }
+	   
+		</style>
+	
+</head>
+<body>
+<nav class="navbar navbar-expand-lg  shadow nvc" style="border-bottom: 1px solid black">
+
+  <a class="navbar-brand logotext active" href="index.html"><img src="images/logo.jpg" class="shadow" height="40" width="40" alt="logo"> &nbsp;Code Genetics</a>
+ <button class="navbar-toggler" style="outline: none;" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" id='thre'>
+    <span class="navbar-toggler-icon pb-5"><img src="images/three.png" height="40" width="40"  alt="Menu"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav m-auto  text-center  justify-content-center">
+      <li class="nav-item ">
+        <a class="nav-link ml-4 mr-4 crsr " onclick="f4()" href='index.html'>Home <span class="sr-only">(current)</span></a>
+      </li>
+       <li class="nav-item   ">
+        <a class="nav-link ml-4 mr-4 crsr" href="demoVideo.html" style="outline: none;" >
+          Demo Videos
+        </a>
+        
+      </li>
+            <li class="nav-item  ">
+        <a class="nav-link ml-4 mr-4 crsr" href="vision.html" onclick="f3()"  role="button" >
+          Vision and Mission
+        </a>
+        
+      </li>
+             <li class="nav-item   ">
+        <a class="nav-link ml-4 mr-4 crsr" onclick="f5()" href="index.html#list2" role="button" >
+          Success Stories
+        </a>
+        
+      </li>
+            <li class="nav-item  ">
+        <a class="nav-link ml-4 mr-4 crsr" href="index.html#list1" onclick="f3()"  role="button" >
+          Courses
+        </a>
+        
+      </li>
+             
+               <li class="nav-item   ">
+        <a class="nav-link ml-4 mr-4 crsr " href="index.html#list3" onclick="f6()"  role="button" >
+          Contact Us
+        </a>
+        
+      </li>
+             
+     
+    </ul>
+  </div>
+</nav>
+
+<div class="container-fluid mt-2  pt-5 bg-darkcyan">
+	<div class="row border p-3 mt-3 align-items-center justify-content-around"> 
+		
+		<div class="col-md-8 text-white">
+			<h1 >Dynamic Programming</h1>
+			
+			<h4 class="text-info">In Dynamic Programming, a problem is divided into sub-problems, and the solutions of these sub-problems shall be combined together to reach an overall solution for the main problem.
+</h4><p><h5 class="text-warning">Remember one thing</h5> Dynamic Programming is used to solve optimization problems (like shortest path), where many solutions may exist, but we are interested in only finding an optimal solution for the same (many solutions may exist that achieve the optimal value). </p>
+			
+		</div>
+		<div class="col-md-4"><img src="images/cp2.jpg" class="img-responsive border bg-shade1 img-fluid rounded" alt="Dynamic Programming"></div>
+	</div>
+	
+	<div class="row bg-primary shadow-good text-white  p-2 pt-3 align-items-center">
+		<h4 class=" pb-1 m-auto " style="cursor: default;">About the Course</h4>
+	</div>
+</div>
+<div class="container-fluid bg-white">
+	<div class="container pt-5 pb-3">
+		<div class="row rounded shadow-good ">
+			<div class= "col-md-5 pt-3 pb-3">
+				<img src="images/post2.svg" class="img-fluid img-responsive rounded" alt="Dynamic Programming">
+			</div>
+			<div class="col-md-7 p-3 text-dark">
+				<h2 class="font-weight-bold">Dynamic Programming</h2>
+				<h4 class="text-cyan mb-2">We are starting a batch on Dynamic Programming.
+				<br>
+				<br>
+				</h4>
+				<h5 style="line-height: 34px;color: darkblue">-It is best for the engineering students those want to develop critical skills.
+				<br> 
+				-We need only 20 Indian Students and 10 International students.
+				<br>
+				-The Enrollment Will Happen in First Come First Serve Order. <br>
+				-All together we will solve around 500 to 600 questions. 
+				</h5>
+				<button class="crsr rounded btn-lg shadow  btn-outline-success border border-success " onclick="location.href='https://docs.google.com/forms/d/e/1FAIpQLSfqOMGQp0TMK9yurutbvWxkYfSmVI3IBLyV5fh77wkZLeLt-w/viewform'">Enroll</button>
+			</div>
+		</div>
+		<div class="row justify-content-around mt-5 pt-3 rounded shadow-good">
+			<div class="card col-md-4 shadow-good bg-light mb-3" style="max-width: 18rem;">
+  
+  <div class="card-body">
+      <h5 class="card-title fa-4x text-center"><i class="far fa-clock"></i></h5>
+    <h4 class="text-info text-center font-weight-bold">Duration</h4>
+     <h5 class="text-center text-cyan">1 Month</h5>
+  </div>
+</div><div class="card col-md-4 shadow-good bg-light mb-3" style="max-width: 18rem;">
+  
+  <div class="card-body">
+    <h5 class="card-title fa-4x text-center"><i class="fas fa-map-marker"></i></h5>
+       <h4 class="text-info text-center font-weight-bold">Online Videos</h4>
+     <h5 class="text-center text-cyan"><a class="btn btn-info" href="demoVideo.html">Demo Videos Here</a></h5>
+  </div>
+</div>
+			<div class="card col-md-4 shadow-good bg-light mb-3" style="max-width: 18rem;">
+ 
+  <div class="card-body">
+    <h5 class="card-title fa-4x text-center"><i class="fas fa-dollar-sign"></i></h5>
+       <h4 class="text-info text-center "><i class="fas fa-dollar-sign"></i> 300</h4>
+    
+  </div>
+</div>
+		</div>
+		<br>
+<!--<button class="btn shadow btn-block btn-outline-success" style="cursor: auto">This product is designed to help you to get into  <br>  the good  companies likeWallmart  <br>  Amazon and many other tech companies..</button>-->
+<!--<br><br>-->
+
+
+<p>
+<!--
+  
+  <button class="btn btn-block shadow-good btn-lg btn-outline-danger" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+    PHASES
+  </button>
+</p>
+<div class="collapse" id="collapseExample">
+  <div class="card card-body">
+    <div class="accordion" id="accordionExample">
+  <div class="card">
+    <div class="card-header" id="headingOne">
+      <h5 class="mb-0">
+       <button class="btn btn-block btn-danger" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        Phase 1
+        </button>
+      </h5>
+    </div>
+
+    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+      <div class="card-body">
+       We Will Teach The Basic(Programming Basic,C)
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingTwo">
+      <h5 class="mb-0">
+        <button class="btn btn-block btn-danger" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseOne">
+        Phase 2
+        </button>
+      </h5>
+    </div>
+    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+      <div class="card-body">
+         We will teach C++ Basic and STL.
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingThree">
+      <h5 class="mb-0">
+        <button class="btn btn-block btn-danger" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseOne">
+        Phase 3
+        </button>
+      </h5>
+    </div>
+    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+      <div class="card-body">
+         Whole Data Structure(Array,Stack,Queue,Tree)
+      </div>
+    </div>
+  </div>
+    <div class="card">
+    <div class="card-header" id="headingFour">
+      <h5 class="mb-0">
+        <button class="btn btn-block btn-danger" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseOne">
+        Phase 4
+        </button>
+      </h5>
+    </div>
+    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+      <div class="card-body">
+        Algorithms (Divide and Conquer, Greedy)
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingFive">
+      <h5 class="mb-0">
+        <button class="btn btn-block btn-danger" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true" aria-controls="collapseOne">
+        Phase 5
+        </button>
+      </h5>
+    </div>
+    <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+      <div class="card-body">
+        Dynamic Programming (Around 70 to 80 Questions).
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingSix">
+      <h5 class="mb-0">
+        <button class="btn btn-block btn-danger" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="true" aria-controls="collapseOne">
+        Phase 6
+        </button>
+      </h5>
+    </div>
+    <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
+      <div class="card-body">
+       Graph
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingSeven">
+      <h5 class="mb-0">
+        <button class="btn btn-block btn-danger" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="true" aria-controls="collapseOne">
+        Phase 7
+        </button>
+      </h5>
+    </div>
+    <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordionExample">
+      <div class="card-body">
+        Java and Object-Oriented Programming (OOPs)
+      </div>
+    </div>
+  </div>
+   <div class="card">
+    <div class="card-header" id="headingEight">
+      <h5 class="mb-0">
+        <button class="btn btn-block btn-danger" type="button" data-toggle="collapse" data-target="#collapseEight" aria-expanded="true" aria-controls="collapseOne">
+        Phase 8
+        </button>
+      </h5>
+    </div>
+    <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#accordionExample">
+      <div class="card-body">
+      Design Patterns.
+      </div>
+    </div>
+  </div>
+  
+  
+  
+  
+  
+  
+</div>
+  </div>
+</div>
+-->
+
+<br>
+ <hr>
+   <br>
+    <div class="row">
+        <div class="col-md-12"><h5 class="text-center">Kindly fill the form so that we can have a look at your interest.</h5>
+    </div>
+    <br>
+    <br>
+         <button class="btn btn-lg btn-success btn-block " onclick="location.href=''">Enroll Now</button>
+  
+
+	</div>
+	
+</div>
+<hr class="text-light bg-light">
+
+<!--
+ <div class="text-dark text-center pt-3 container-fluid bg-white">
+    <h1 >Contact Us</h1>
+    	<form action="" id="list3" class="form-flex mt-3 pb-4">
+    	<input type="text"  name="" id="" placeholder="Name" required>
+		<input type="email" class="form-group" placeholder="Email" required>
+   		<input type="text" placeholder="Subject" name="" id="">
+   		<textarea placeholder="Message"></textarea>
+   		<input type="submit" value="Submit" class="btn rounded-0 btn-outline-success">
+    	</form>
+    </div>
+    
+ <hr class="text-light bg-light">
+  <div class="container-fluid mt-3 ">
+    	<div class="row justify-content-center pt-3">
+    		<h1 class="text-light col-lg-12 text-center"><i class="fa fa-phone" aria-hidden="true"></i>&nbsp;&nbsp;Call Us Now!</h1>
+    	</div>
+    	<div class="row justify-content-center pt-3 pb-3">
+    		<div class="col-lg-12 text-center">
+    			<img src="images/logo.jpg" alt="" class="img-fluid shadow" style="height: 160px;width: 160px;border-radius: 80px; border:2px solid white">
+    			<h2 class="text-light" id="list4">Code Genetics</h2>
+    		</div>
+    	</div>
+    	<div class="row justify-content-center pt-3 pb-3">
+    		<a href="https://www.facebook.com/codegenetics" class="snlogo1 crsr mr-4"></a>
+    		<a href="#" class="snlogo2 crsr"></a>
+    		 
+    	</div>
+    </div> -->
+
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+   <div class="container-fluid"style="background:linear-gradient(to right bottom,#002f3d, #002a72);font-family: 'Raleway',san-serif;">
+    <div class="row justify-content-around">
+        <div class="col-md-4 text-center pt-3 text-white" style="border-right: 1px solid white;border-bottom: 1px solid white">
+           <h2>Know More</h2>
+           <div class="align-items-center d-flex flex-column text-light  text-left justify-content-around ">
+            <h5 class='crsr btn-block' onclick="location.href='vision.html'">Vision And Mission</h5>
+            <h5 class='crsr  btn-block' onclick="location.href='yc.html'">Why Competitive Programming ?</h5>
+            <h5 class='crsr  btn-block' onclick="location.href='demoVideo.html'">Demo Videos</h5>
+            
+            </div>
+            
+        </div>
+        <div class="col-md-4" style="border-right: 1px solid white;border-bottom: 1px solid white">
+            <div class="row justify-content-center pt-3">
+    		<h1 class="text-light col-lg-12 text-center"><i class="fa fa-phone" aria-hidden="true"></i>&nbsp;&nbsp;Call Us Now!</h1>
+    	</div>
+    	<div class="row justify-content-center pt-3 pb-3">
+    	<h4 class="text-white">+091 97695790876</h4>
+    		<div class="col-lg-12 text-center">
+    
+    			<img src="images/logo.jpg" alt="logo" class="img-fluid shadow" style="height: 100px;width: 100px;border-radius: 80px; border:2px solid white"> <br> <br>
+    			<h2 class="text-light" id="list4">Code Genetics</h2>
+    		</div>
+    	</div>
+        </div>
+        <div class="col-md-4" style="border-bottom: 1px solid white"><div class="row justify-content-center d-flex align-items-center mt-5 pt-3 pb-3" >
+    		<a href="https://www.facebook.com/codegenetics"  class=" snlogo1 crsr mr-4 mt-5"></a>
+    		
+    		<a href="#" class="snlogo2 crsr mt-5"></a>
+    		 
+    	</div></div>
+    </div>
+    	
+    	
+    </div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.4/js/tether.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<!--	https://www.youtube.com/watch?v=QwievZ1Tx-8-->
+<script src="script.js"></script>
+<!--
+	<script>
+		
+//$(document).ready(function(){
+//	alert('hj');
+//    $("#seeMore1").toggle(
+//        function(){
+//			var put=$("#seeMoreText1").html();
+//			$("#seeMoreTextArea1").html(put);},
+//        
+//    });
+//});
+			
+</script>
+-->
+	  
+
+	</body>
+
+</html>

@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--   pexels free imgs-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <meta name="description" content="This website give high quality programming course by IIT Alumini">
+  <meta name="keywords" content="Competetive programming,coding,dynamic programmming,job preparation,online coding course">
+  <meta name="author" content="Kashif Wahaj">
+    <link rel="icon" 
+      type="image/jpg" 
+      href="images/logo.jpg" style="border-radius: 20px;">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+   
+   <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC" rel="stylesheet">   
+    <link rel="stylesheet" href="style.css">
+   
+    <title>Code Genetics</title>
+   <style>
+	body
+		{
+/*
+			background: url(images/bg.png) no-repeat center center fixed;
+			-webkit-background-size: cover;
+			background-size: cover;
+*/
+			background:linear-gradient(to right bottom,#002f3d, #002a72);
+			font-family: 'Poppins', sans-serif;
+		}
+		
+		.nbc
+		{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 100%;
+			
+			
+		}
+	
+		
+		.nbc li {
+			width: 100px;
+
+			
+		}
+		.hoverbest{
+			background-color: transparent;
+			border: 1px solid white;
+		}
+		.hoverbest a:hover{
+			background-color:rgba(0,0,0,0.3);
+			color: white;
+		}
+	   .go{
+		   font-size: 30px;
+		   
+		   color: #fff8e5;
+		   border: 2px solid #fff8e5;
+		 width: 60px;
+		   height: 60px;
+		   border-radius:40px;
+	   }
+	   
+	   .bg-cyan{
+		   background-color:#fff8e5;
+	   }
+	   .snlogo1{
+		   height: 60px;
+		   width:60px;
+		   background:url(images/fb.png);
+		   background-size: contain;
+		   border-radius: 40px;
+		   border: 2px solid white;
+        
+	   }
+	     .snlogo2{
+		   height: 60px;
+		   width:60px;
+		   background:url(images/twitter.png);
+		   background-size: contain;
+		   border-radius: 40px;
+		   border: 2px solid white;
+	   }
+	   .text-hover-white:hover{
+	color: white;
+}
+	   
+		</style>
+	
+</head>
+<body>
+<nav class="navbar navbar-expand-lg  shadow nvc" style="border-bottom: 1px solid black">
+
+  <a class="navbar-brand logotext active" href="index.html"><img src="images/logo.jpg" class="shadow" height="40" width="40" alt="logo"> &nbsp;Code Genetics</a>
+ <button class="navbar-toggler" style="outline: none;" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" id='thre'>
+    <span class="navbar-toggler-icon pb-5"><img src="images/three.png" height="40" width="40"  alt="Menu"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav m-auto  text-center  justify-content-center">
+      <li class="nav-item ">
+        <a class="nav-link ml-4 mr-4 crsr " onclick="f4()" >Home <span class="sr-only">(current)</span></a>
+      </li>
+       <li class="nav-item   ">
+        <a class="nav-link ml-4 mr-4 crsr" href="demoVideo.html" style="outline: none;" >
+          Demo Videos
+        </a>
+        
+      </li>
+            <li class="nav-item  ">
+        <a class="nav-link ml-4 mr-4 crsr" onclick="f3()" href="vision.html"  role="button" >
+          Vision and Mission
+        </a>
+        
+      </li>
+             <li class="nav-item   ">
+        <a class="nav-link ml-4 mr-4 crsr" onclick="f5()"  role="button" >
+          Success Stories
+        </a>
+        
+      </li>
+            <li class="nav-item  ">
+        <a class="nav-link ml-4 mr-4 crsr" onclick="f3()"  role="button" >
+          Courses
+        </a>
+        
+      </li>
+             
+               <li class="nav-item   ">
+        <a class="nav-link ml-4 mr-4 crsr " onclick="f6()"  role="button" >
+          Contact Us
+        </a>
+        
+      </li>
+             
+     
+    </ul>
+  </div>
+</nav>
+
+<div class="contSlider">
+<div id="carouselExampleIndicators" class="carousel slide mb-3 carousel-fade" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner text-center">
+    <div class="carousel-item active">
+      <img class="mt-3" style="border-radius: 1px; border: 1px solid white" src="images/newbg-1.png"  alt="competitive coding">
+      <div class="carousel-caption d-none   d-md-block">
+      <div class="jumbotron bg-transparent">
+  <h1 class="flight h1">COMPETITIVE CODING </h1>
+  <p class="lead" style="font-family:'Alegreya Sans SC',san-serif;letter-spacing:2px;">
+We are providing video lectures on competitive coding.It is a complete program for engieering students and it is must for the tier 2 and tier 3 engineering college students.The course duration will be of 3 months.We hire coders from IIT, NIT and IIIT to teach you good coding which is not taught in private engineering colleges.</p>
+  <button class="btn btn-outline-danger text-light border btn-lg rounded-0" onclick="location.href='comProg1.html'" role="button">LEARN MORE</button>&nbsp;&nbsp; <a class="btn btn-outline-danger btn-lg text-light border rounded-0" href="https://docs.google.com/forms/d/e/1FAIpQLSc8wJ5h_4oUVpycR3A9FiZIKiUU1Wr1-Z9pxIfyoX5w6r0xJA/viewform"  role="button">REGISTER NOW</a>
+</div>
+   
+  </div>
+   <div class="carousel-caption res d-md-none  d-xs-block">
+     <div class="jumbotron bg-transparent">
+  <h2 class="flight h1">COMPETITIVE CODING </h2>
+  <p style="font-family: 'Alegreya Sans SC',san-serif;letter-spacing:2px;">
+We are providing video lectures on competitive coding.It is a complete program for engieering students and it is must for the tier 2 and tier 3 engineering college students.The course duration will be of 3 months.We hire coders from IIT, NIT and IIIT to teach you good coding which is not taught in private engineering colleges.</p>
+  <a class="btn btn-outline-danger text-light mb-1 border btn-lg rounded-0" onclick="location.href='comProg1.html'" role="button">LEARN MORE</a>&nbsp;&nbsp; <a class="btn btn-outline-danger btn-lg text-light border rounded-0" href="https://docs.google.com/forms/d/e/1FAIpQLSc8wJ5h_4oUVpycR3A9FiZIKiUU1Wr1-Z9pxIfyoX5w6r0xJA/viewform"  role="button">REGISTER NOW</a>
+</div>
+   
+  </div>
+     
+    </div>
+    <div class="carousel-item">
+      <img class="mt-3" style="border-radius: 1px; border: 1px solid white" src="images/newbg-2.png" alt="dynamic programming">
+       <div class="carousel-caption d-none  d-md-block ">
+    <div class="jumbotron bg-transparent">
+  <h1 class="flight h1">DYNAMIC PROGRAMMING </h1>
+  <p class="lead" style="font-family: 'Alegreya Sans SC',san-serif;letter-spacing:2px;">
+We are starting a batch on dynamic programming Soon.Intrested candidate can fill the form.We need only 20 indian students and 10 international students and the enrollment will happen in FCFS order.</p>
+  <a class="btn btn-danger btn-lg rounded-0" onclick="location.href='comProg2.html'" role="button">LEARN MORE</a>&nbsp;&nbsp; <a class="btn btn-danger btn-lg rounded-0" href="https://docs.google.com/forms/d/e/1FAIpQLSfqOMGQp0TMK9yurutbvWxkYfSmVI3IBLyV5fh77wkZLeLt-w/viewform" role="button">REGISTER NOW</a>
+</div>
+  </div>
+
+     <div class="carousel-caption res d-md-none  d-xs-block">
+      <div class="jumbotron bg-transparent">
+  <h2 class="flight h2">DYNAMIC PROGRAMMING </h2>
+  <p class="lead" style="font-family: 'Alegreya Sans SC',san-serif;letter-spacing:2px;">
+We are starting a batch on dynamic programming Soon.Intrested candidate can fill the form.We need only 20 indian students and 10 international students and the enrollment will happen in FCFS order.</p>
+  <a class="btn btn-danger mb-1 btn-lg rounded-0" onclick="location.href='comProg2.html'"  role="button">LEARN MORE</a>&nbsp;&nbsp; <a class="btn btn-danger btn-lg rounded-0" href="https://docs.google.com/forms/d/e/1FAIpQLSfqOMGQp0TMK9yurutbvWxkYfSmVI3IBLyV5fh77wkZLeLt-w/viewform" role="button">REGISTER NOW</a>
+</div>
+   
+  </div>
+    </div>
+    <div class="carousel-item">
+  <img class="mt-3" style="border-radius: 1px; border: 1px solid white" src="images/newbg-3.png" alt="JOB PREPARATION">
+  <div class="carousel-caption   d-md-block d-none">
+       <div class="jumbotron bg-transparent">
+  <h1 class="flight h1">JOB PREPARATION</h1>
+  <p class="lead" style="font-family: 'Alegreya Sans SC',san-serif;letter-spacing:2px;">
+
+We are providing video lectures on competitive coding for placements.It is a complete program for placements drive and it is must for the tier 2 and tier 3 engineering college students.The course duration will be of 3 months.We hire coders from IIT, NIT and IIIT to teach you good coding.</p>
+  <a class="btn btn-success btn-lg rounded-0" onclick="location.href='comProg3.html'"  role="button">LEARN MORE</a>&nbsp;&nbsp; <a class="btn btn-success btn-lg rounded-0" href="https://docs.google.com/forms/d/e/1FAIpQLSfeDmDzHHmrC8lMEpqgVkKL5Fu4jNCvOjwS_S-BSIgPDNbmpQ/viewform" role="button">REGISTER NOW</a>
+</div>
+  </div>
+             
+    <div class="carousel-caption res-xs d-md-none  d-xs-block">
+      <div class="jumbotron bg-transparent">
+  <h2 class="flight h2">JOB PREPARATION</h2>
+  <p class="lead" style="font-family: 'Alegreya Sans SC',san-serif;letter-spacing:2px;">We are providing video lectures on competitive coding for placements.It is a complete program for placements drive and it is must for the tier 2 and tier 3 engineering college students.The course duration will be of 3 months.We hire coders from IIT, NIT and IIIT to teach you good coding.</p> 
+  <a class="btn btn-success mb-1 btn-lg rounded-0" onclick="location.href='comProg3.html'"  role="button">LEARN MORE</a>&nbsp;&nbsp; <a class="btn btn-success btn-lg rounded-0" href="https://docs.google.com/forms/d/e/1FAIpQLSfeDmDzHHmrC8lMEpqgVkKL5Fu4jNCvOjwS_S-BSIgPDNbmpQ/viewform" role="button">REGISTER NOW</a>
+</div>
+   
+  </div>
+</div>
+   
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+</div>
+
+<div class="container mt-5" >
+   <h1 class="text-light text-center mb-4" >C O U R S E S</h1>
+    <div class="row bordr justify-content-around" id="list1">
+    <div class="col-md-4 trans col-sm-5 mb-3" id="list11">
+        <div  class="card  rounded-0 bg-white">
+    
+    <div class="card-body  anim text-dark text-center bg-white shadow ">
+      <h3 class="card-title bg-img1 text-center text-white" >
+          <img class="card-img-top img-fluid w-25 text-center m-auto pt-1" src="images/post3.svg" alt="competitive coding"> <br> COMPETITIVE PROGRAMMING</h3>
+       
+      <p class="text-left " id="seeMoreTextArea1">
+
+
+
+
+
+<span class="text-darkcyan">This Course is aimed for students who aspire for competitive contest like ACM ICPC,Google Code Jam,Facebook Hackercup and many more.
+</span> 
+<!--<div class="tab-darkblue m-2 shadow-good">This product is designed to help you to get into the good companies like Wallmart Amazon and many other tech companies.</div> <br>-->
+<!--
+ <b class="text-info h5">Fees</b>: INR 13.5k <br>
+<span class="font-weight-bold"> It is negotiable if you show good interest in coding </span><br></p>
+-->
+  <div class="text-primary mb-3 text-left crsr" onclick="f1(this)" id="seeMore1" >Quick View</div>
+   
+     
+
+        
+        
+        <div class="row justify-content-around text-center align-items-center d-flex">
+       <div class="col-lg-6 col text-center">
+           	<a class="btn crsr btn-resp btn-danger text-light rounded-0 shadow text-right" href="comProg1.html">
+     	Learn More
+	   </a>
+       </div>
+       <div class="col-6  text-center ">
+           <a class="btn crsr btn-resp btn-outline-danger rounded-0 shadow " href="https://docs.google.com/forms/d/e/1FAIpQLSc8wJ5h_4oUVpycR3A9FiZIKiUU1Wr1-Z9pxIfyoX5w6r0xJA/viewform">
+     	Register Now
+     </a>
+       </div>
+        
+    </div>
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+      
+    </div>
+        
+    </div>
+    </div>
+     <div class="col-md-4 trans col-sm-5 mb-3"  id="list21">
+        <div  class="card  rounded-0 bg-white">
+   
+    <div class="card-body text-dark text-center  bg-white shadow ">
+      <h3 class="card-title bg-img2 text-center text-white"> <img class="card-img-top w-25 text-center bg-w m-auto pt-1" src="images/post3.svg" alt="Card image cap"> <br> DYNAMIC PROGRAMMING</h3>
+      
+      <p class="text-left">
+Dynamic Programming is considered as the hardest nut to crack but with hardwork and excellent guidance one can easily master it.
+<br>
+
+
+
+<!--<div class="tab-darkblue m-2 shadow-good">This course is design to teach in most grasping way and one can easy learn everything faster.</div>   -->
+  </p>
+    <div class="row justify-content-around text-center align-items-center d-flex">
+       <div class="col-lg-6 col text-center">
+           	<a class="btn crsr btn-resp btn-danger text-light rounded-0 shadow text-right" href="comProg2.html">
+     	Learn More
+	   </a>
+       </div>
+       <div class="col-6 mr- text-center ">
+           <a class="btn crsr btn-resp btn-outline-danger rounded-0 shadow " href="https://docs.google.com/forms/d/e/1FAIpQLSfqOMGQp0TMK9yurutbvWxkYfSmVI3IBLyV5fh77wkZLeLt-w/viewform">
+     	Register Now
+     </a>
+       </div>
+        
+    </div>
+    	
+    	
+      
+      
+    </div>
+        
+    </div>
+    </div>
+     
+    
+
+  <div class="col-md-4 trans col-sm-5 mb-3" id="list31">
+        <div  class="card  rounded-0 bg-white">
+   
+    <div class="card-body anim text-dark text-center bg-white shadow ">
+      <h3 class="card-title bg-img3 text-center text-white"> <img class="card-img-top w-25 text-center m-auto pt-1" src="images/post3.svg" alt="Card image cap">  <br> JOB PREPARATION</h3>
+      
+      <p class="text-left " id="seeMoreTextArea2">
+
+
+
+<span class="text-darkcyan">This course aims to help students in getting jobs in their dream companies and help them in building real life programming skills. <br>
+</span> 
+<!--<div class="tab-darkblue m-2 shadow-good">This product is designed to help you to get into the good companies like Wallmart Amazon and many other tech companies.</div> <br>-->
+
+<!--
+ <b class="text-info h5">Fees</b>: $599 (International Students)<br>
+<b class="text-danger h5">The Course Structure:</b> <br>
+-->
+ </p>
+  <div class="text-primary mb-3 text-left crsr" onclick="f2(this)" id="seeMore2" >Quick View</div>
+  
+     
+     
+     
+     <div class="row justify-content-around text-center align-items-center d-flex">
+       <div class="col-lg-6 col text-center">
+           	<a class="btn crsr btn-resp btn-danger text-light rounded-0 shadow text-right" href="comProg3.html">
+     	Learn More
+	   </a>
+       </div>
+       <div class="col-6  text-center ">
+           <a class="btn crsr btn-resp btn-outline-danger rounded-0 shadow " href="https://docs.google.com/forms/d/e/1FAIpQLSfeDmDzHHmrC8lMEpqgVkKL5Fu4jNCvOjwS_S-BSIgPDNbmpQ/viewform">
+     	Register Now
+     </a>
+       </div>
+        
+    </div>
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+      
+      
+    </div>
+        
+    </div>
+    </div>
+    
+</div>
+   
+   
+    </div>
+    
+    
+   
+    
+    
+    <div class="container-fluid pb-3 bg-light">
+    	<div class="row  pt-4 pb-5 flight">
+    		<h1 class="text-center m-auto" >WHAT OUR STUDENTS SAYS</h1>
+    	</div>
+    	
+    
+    
+   <div id="carouselExampleFade"  class="carousel slide carousel-fade bg-white pb-3 shadow" data-ride="carousel">
+  <div class="carousel-inner" id="list2">
+    <div class="carousel-item active">
+    
+     <div class="container">
+    	<div class="row mt-3  pb-3 bg-white justify-content-around">
+    		<div class="col-lg-5 pt-4 shadow mt-3">
+    		<div class="row ">
+    			<div class="col-lg-4 text-center ">
+    				<img src="images/saksham.png" class="rounded-circle" height="120" width="120" alt="">
+    				<h4>Shakshm Agrawal</h4>
+    				<h6>NIT Jaipur </h6>
+					<p style="color: red;">★★★★★</p>
+    				
+    			</div>
+    			<div class="col-lg-8 pb-2">
+    			One of our student shakshm Agrawal from NIT Jaipur got selected in Salesforce with 30 LPA..
+After all the odds you have done it..So so so proud of you..
+<button class="btn btn-block btn-outline-danger">Company</button>
+<button class="btn btn-block btn-danger">Salesforce </button><br>
+<a href="https://m.facebook.com/saksham.agarwal.96" class="btn btn-primary primary">Facebook</a>
+    			</div>
+    			</div>
+    		</div>
+    		<div class="col-lg-5 pt-4 shadow  mt-3">
+    		<div class="row ">
+    			<div class="col-lg-4 text-center ">
+    				<img src="images/kartik.jpg" class="rounded-circle" height="120" width="120" alt="">
+    				<h4>Kartik Dutta</h4>
+    				<h6></h6>
+					<p style="color: red;">★★★★★</p>
+    				
+    			</div>
+    			<div class="col-lg-8 pb-2">
+    			I am happy to announce that one of our student Kartik Dutta got selected in AppDynamics with 30+LPA..
+A lot more to come in ur way..So so so proud of you..<button class="btn btn-block btn-outline-danger">Company</button>
+<button class="btn btn-block btn-danger"> AppDynamics  </button><br>
+<button  class="btn btn-primary primary">Facebook</button>
+    			</div>
+    			</div>
+    		</div>
+    	</div>
+    	
+    <div class="row bg-white  pb-3 justify-content-around">
+    		<div class="col-lg-5 pt-4 shadow  mt-3">
+    		<div class="row ">
+    			<div class="col-lg-4 text-center ">
+    				<img src="images/profilepic2.svg" class="rounded-circle" height="120" width="120" alt="">
+    				<h4>viplav tarai</h4>
+    				<h6></h6>
+					<p style="color: red;">★★★★★</p>
+    				
+    			</div>
+    			<div class="col-lg-8 pb-2">
+    			One of our student viplav tarai got placed in Amazon with 28LPA ...height of awesomeness...so so so proud of you..<button class="btn btn-block btn-outline-danger">Company</button>
+<button class="btn btn-block btn-danger"> Amazon  </button><br>
+<button  class="btn btn-primary primary">Facebook</button>
+    			</div>
+    			</div>
+    		</div>
+    		<div class="col-lg-5 pt-4 shadow  mt-4">
+    		<div class="row ">
+    		<div class="col-lg-4 text-center ">
+    				<img src="images/profilepic2.svg" class="rounded-circle" height="120" width="120" alt="">
+    				<h4>XYX</h4>
+    				<h6></h6>
+					<p style="color: red;">★★★★★</p>
+    				
+    			</div>
+    			<div class="col-lg-8 pb-2">
+    				
+<button class="btn btn-block btn-outline-danger">Company</button>
+<button class="btn btn-block btn-danger">  xyz </button><br>
+<button  class="btn btn-primary primary">Facebook</button>
+    			</div>
+    			</div>
+    		</div>
+    	</div>
+    	</div>
+    </div>
+    <div class="carousel-item">
+     <div class="container">
+    	<div class="row mt-3  pb-3 bg-white justify-content-around">
+    		<div class="col-lg-5 pt-4 shadow mt-3">
+    		<div class="row ">
+    			<div class="col-lg-4 text-center ">
+    				<img src="images/profilepic2.svg" class="rounded-circle" height="120" width="120" alt="">
+            <h4>XYX</h4>
+            <h6></h6>
+          <p style="color: red;">★★★★★</p>
+            
+          </div>
+          <div class="col-lg-8 pb-2">
+            
+<button class="btn btn-block btn-outline-danger">Company</button>
+<button class="btn btn-block btn-danger">  xyz </button><br>
+<button  class="btn btn-primary primary">Facebook</button>
+    			</div>
+    			</div>
+    		</div>
+    		<div class="col-lg-5 pt-4 shadow  mt-3">
+    		<div class="row ">
+    			<div class="col-lg-4 text-center ">
+    			<img src="images/profilepic2.svg" class="rounded-circle" height="120" width="120" alt="">
+            <h4>XYX</h4>
+            <h6></h6>
+          <p style="color: red;">★★★★★</p>
+            
+          </div>
+          <div class="col-lg-8 pb-2">
+            
+<button class="btn btn-block btn-outline-danger">Company</button>
+<button class="btn btn-block btn-danger">  xyz </button><br>
+<button  class="btn btn-primary primary">Facebook</button>
+    			</div>
+    			</div>
+    		</div>
+    	</div>
+    	
+    <div class="row bg-white  pb-3 justify-content-around">
+    		<div class="col-lg-5 pt-4 shadow  mt-3">
+    		<div class="row ">
+    			<div class="col-lg-4 text-center ">
+    				<img src="images/profilepic2.svg" class="rounded-circle" height="120" width="120" alt="">
+            <h4>XYX</h4>
+            <h6></h6>
+          <p style="color: red;">★★★★★</p>
+            
+          </div>
+          <div class="col-lg-8 pb-2">
+            
+<button class="btn btn-block btn-outline-danger">Company</button>
+<button class="btn btn-block btn-danger">  xyz </button><br>
+<button  class="btn btn-primary primary">Facebook</button>
+    			</div>
+    			</div>
+    		</div>
+    		<div class="col-lg-5 pt-4 shadow  mt-4">
+    		<div class="row ">
+    		<div class="col-lg-4 text-center ">
+    				<img src="images/profilepic2.svg" class="rounded-circle" height="120" width="120" alt="">
+            <h4>XYX</h4>
+            <h6></h6>
+          <p style="color: red;">★★★★★</p>
+            
+          </div>
+          <div class="col-lg-8 pb-2">
+            
+<button class="btn btn-block btn-outline-danger">Company</button>
+<button class="btn btn-block btn-danger">  xyz </button><br>
+<button  class="btn btn-primary primary">Facebook</button>
+    			</div>
+    			</div>
+    		</div>
+    	</div>
+    	</div>
+    </div>
+    <div class="carousel-item">
+      <div class="container">
+    	<div class="row mt-3  pb-3 bg-white justify-content-around">
+    		<div class="col-lg-5 pt-4 shadow mt-3">
+    		<div class="row ">
+    			<div class="col-lg-4 text-center ">
+    			<img src="images/profilepic2.svg" class="rounded-circle" height="120" width="120" alt="">
+            <h4>XYX</h4>
+            <h6></h6>
+          <p style="color: red;">★★★★★</p>
+            
+          </div>
+          <div class="col-lg-8 pb-2">
+            
+<button class="btn btn-block btn-outline-danger">Company</button>
+<button class="btn btn-block btn-danger">  xyz </button><br>
+<button  class="btn btn-primary primary">Facebook</button>
+    			</div>
+    			</div>
+    		</div>
+    		<div class="col-lg-5 pt-4 shadow  mt-3">
+    		<div class="row ">
+    			<div class="col-lg-4 text-center ">
+    			<img src="images/profilepic2.svg" class="rounded-circle" height="120" width="120" alt="">
+            <h4>XYX</h4>
+            <h6></h6>
+          <p style="color: red;">★★★★★</p>
+            
+          </div>
+          <div class="col-lg-8 pb-2">
+            
+<button class="btn btn-block btn-outline-danger">Company</button>
+<button class="btn btn-block btn-danger">  xyz </button><br>
+<button  class="btn btn-primary primary">Facebook</button>
+    			</div>
+    			</div>
+    		</div>
+    	</div>
+    	
+    <div class="row bg-white  pb-3 justify-content-around">
+    		<div class="col-lg-5 pt-4 shadow  mt-3">
+    		<div class="row ">
+    			<div class="col-lg-4 text-center ">
+    				<img src="images/profilepic2.svg" class="rounded-circle" height="120" width="120" alt="">
+            <h4>XYX</h4>
+            <h6></h6>
+          <p style="color: red;">★★★★★</p>
+            
+          </div>
+          <div class="col-lg-8 pb-2">
+            
+<button class="btn btn-block btn-outline-danger">Company</button>
+<button class="btn btn-block btn-danger">  xyz </button><br>
+<button  class="btn btn-primary primary">Facebook</button>
+    			</div>
+    			</div>
+    		</div>
+    		<div class="col-lg-5 pt-4 shadow  mt-4">
+    		<div class="row ">
+    		<div class="col-lg-4 text-center ">
+    			<img src="images/profilepic2.svg" class="rounded-circle" height="120" width="120" alt="">
+            <h4>XYX</h4>
+            <h6></h6>
+          <p style="color: red;">★★★★★</p>
+            
+          </div>
+          <div class="col-lg-8 pb-2">
+            
+<button class="btn btn-block btn-outline-danger">Company</button>
+<button class="btn btn-block btn-danger">  xyz </button><br>
+<button  class="btn btn-primary primary">Facebook</button>
+    			</div>
+    			</div>
+    		</div>
+    	</div>
+    	</div>
+    </div>
+  </div>
+  <a class="carousel-control-prev " href="#carouselExampleFade" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon p-3 mr-5   rounded-circle bg-danger" aria-hidden="true"></span>
+    <span class="sr-only  t">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+    <span class="carousel-control-next-icon p-3 ml-5 text-dark rounded-circle bg-danger" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+	<div class="m-auto text-center pt-4 pb-3">   <a class="btn shadow-lg btn-lg  m-auto text-center text-hover-white  btn-outline-danger rounded-0 ">READ MORE REVIEWS</a></div>
+</div>
+
+	</div>
+    
+    
+    <div class="text-dark text-center pt-3 container-fluid bg-white">
+    <h1 >Contact Us</h1>
+    	<form action="#" method="post" id="list3" class="form-flex mt-3 pb-4">
+    	<input type="text"  name="name" id="" placeholder="Name" required>
+		<input type="email" name="mail" class="form-group" placeholder="Email" required>
+   		<input type="text" placeholder="Subject" name="subject" id="">
+   		<textarea placeholder="Message" name="message"></textarea>
+   		<input name="submit" type="submit" value="Submit" class="btn rounded-0 btn-outline-success">
+    	</form>
+    </div>
+    
+    
+    
+    
+  <div class="container-fluid" style="font-family: 'Raleway',san-serif;">
+    <div class="row justify-content-around">
+        <div class="col-md-4 text-center pt-3 text-white" style="border-right: 1px solid white;border-bottom: 1px solid white">
+           <h2>Know More</h2>
+           <div class="align-items-center d-flex flex-column text-light  text-left justify-content-around ">
+            <h5 class='crsr btn-block' onclick="location.href='vision.html'">Vision And Mission</h5>
+            <h5 class='crsr  btn-block' onclick="location.href='yc.html'">Why Competitive Programming ?</h5>
+            <h5 class='crsr  btn-block' onclick="location.href='demoVideo.html'">Demo Videos</h5>
+            
+            </div>
+            
+        </div>
+        <div class="col-md-4" style="border-right: 1px solid white;border-bottom: 1px solid white">
+            <div class="row justify-content-center pt-3">
+    		<h1 class="text-light col-lg-12 text-center"><i class="fa fa-phone" aria-hidden="true"></i>&nbsp;&nbsp;Call Us Now!</h1>
+    	</div>
+    	<div class="row justify-content-center pt-3 pb-3">
+    	<h4 class="text-white">+091 97695790876</h4>
+    		<div class="col-lg-12 text-center">
+    
+    			<img src="images/logo.jpg" alt="logo" class="img-fluid shadow" style="height: 100px;width: 100px;border-radius: 80px; border:2px solid white"> <br> <br>
+    			<h2 class="text-light" id="list4">Code Genetics</h2>
+    		</div>
+    	</div>
+        </div>
+        <div class="col-md-4" style="border-bottom: 1px solid white"><div class="row justify-content-center d-flex align-items-center mt-5 pt-3 pb-3" >
+    		<a href="https://www.facebook.com/codegenetics"  class=" snlogo1 crsr mr-4 mt-5"></a>
+    		
+    		<a href="#" class="snlogo2 crsr mt-5"></a>
+    		 
+    	</div></div>
+    </div>
+    	
+    	
+    </div>
+	
+	
+		<i class="fa call fa-phone  shadow rounded-circle text-success bg-light" aria-hidden="true" onclick="f7()"></i>
+		
+		<div class="d-none" id="seeMoreText1">
+		
+
+<b class="text-danger h5">The Course Structure:</b> <br>
+<span class="text-info">Phase 1</span>: We will teach the basic(Programming Basic,C) <br>
+<span class="text-info">Phase 2</span>: We will teach C++ Basic and STL <br>
+<span class="text-info">Phase 3</span>: Whole data structure(Array,Stack,Queue,Tree) <br>
+<span class="text-info">Phase 4</span>: Algorithm(Divide and Conquer,Greedy) 	<br>
+<span class="text-info">Phase 5</span>: Dynamic Programming(Around 70 to 80 Questions) <br>
+<span class="text-info">Phase 6</span>: Graph <br>
+<span class="text-info">Phase 7</span>:Java and Object-Oriented Programming <br>
+<span class="text-info">Phase 8</span>: Design Pattern <br>
+
+<span class="text-info h5">Classes Timings</span>: 2 hours every day. <br>
+All together we will solve around 500 to 600 question. <br>After each phase, there will be a coding test of 3 hours. <br>
+
+This product is designed to help you to get into the good companies like Wallmart,Amazon and many other tech companies. <br>
+		<b class="text-info h5">Fees</b>: INR 13.5k <br>
+<span class="font-weight-bold"> It is negotiable if you show good interest in coding </span><br>
+			
+		</div>
+	<div class="d-none" id="seeMoreText2">
+		
+<b class="text-danger h5">The Course Structure:</b> <br>
+<span class="text-info">Phase 1</span>: We will teach the basic(Programming Basic,C) <br>
+<span class="text-info">Phase 2</span>: We will teach C++ Basic and STL <br>
+<span class="text-info">Phase 3</span>: Whole data structure(Array,Stack,Queue,Tree) <br>
+<span class="text-info">Phase 4</span>: Algorithm(Divide and Conquer,Greedy) 	<br>
+<span class="text-info">Phase 5</span>: Dynamic Programming(Around 70 to 80 Questions) <br>
+<span class="text-info">Phase 6</span>: Graph <br>
+<span class="text-info">Phase 7</span>:Java and Object-Oriented Programming <br>
+<span class="text-info">Phase 8</span>: Design Pattern <br>
+
+<span class="text-info h5">Classes Timings</span>: 2 hours every day. <br>
+All together we will solve around 500 to 600 question. <br>After each phase, there will be a coding test of 3 hours. <br>
+
+This product is designed to help you to get into the good companies like Wallmart,Amazon and many other tech companies. <br>
+		<b class="text-info h5">Fees</b>: $599 (International Students)<br>
+			
+		</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.4/js/tether.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<!--	https://www.youtube.com/watch?v=QwievZ1Tx-8-->
+<script src="script.js"></script>
+<!--
+	<script>
+		
+//$(document).ready(function(){
+//	alert('hj');
+//    $("#seeMore1").toggle(
+//        function(){
+//			var put=$("#seeMoreText1").html();
+//			$("#seeMoreTextArea1").html(put);},
+//        
+//    });
+//});
+			
+</script>
+-->
+	
+
+	</body>
+
+</html>
