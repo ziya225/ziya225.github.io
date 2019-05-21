@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<title>Wizard</title>
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css.css">   
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+</head>
+
+	
+<style>
+h1,h2,h3,h4,h5,h6 {font-family: "Oswald"}
+body {font-family: "Open Sans"}
+</style>
+      
+    
+<body>
+
+
+
+<div class= "container w3-content" style="max-width:1600px">
+
+
+  <form id="msform">
+  <!-- progressbar -->
+  <ul id="progressbar">
+    <li class="active"><h5>Business</h5></li>
+    <li><h5>Spend Sale</h5></li>
+    <li><h5>Opportunity</h5></li>
+  </ul>
+  <!-- fieldsets -->
+  <fieldset id="fs1">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                
+   <p style="color: orange">Establishment Type*</p> 
+            </div>
+        
+            <div class="col-md-6">
+              Number of meals per week
+                
+            </div>
+        
+    </div>
+      <div class="row">
+            <div class="col-md-6">
+                
+        <select id="establishmenttype" >
+    <option value="ps1">-Please Select-</option>
+    <option value="Restaurants">Restaurants</option>
+    <option value="Quick Service Restaurant (QSR)">Quick Service Restaurant (QSR)</option>
+    <option value="Pubs">Pubs</option>
+    <option value="Hotels">Hotels</option>
+    <option value="Staff Catering">Staff Catering</option>
+    <option value="Healthcare">Healthcare</option>
+    <option value="Education">Education</option>
+    <option value="Services">Services</option>
+  </select>
+            </div>
+        
+            <div class="col-md-6">
+             
+   <input type="number" id="mealsperweek">
+ 
+                
+            </div>
+        
+    </div>
+      </div>
+     
+    <input type="button" name="next" id="next1" class="next action-button btn btn-secondary" value="Next Step 1" />
+   
+    <br><br><br><p style="color: orange">*Any detail submitted in this form will be kept completely confidential</p>
+  </fieldset>
+  
+  <fieldset id="fs2">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                
+   <p style="color: orange">Value of food purchased</p> 
+            </div>
+        
+            <div class="col-md-6">
+             <p style="color: orange">Period of measurement</p>
+                
+            </div>
+        
+    </div>
+      <div class="row">
+            <div class="col-md-6">
+                
+       <input type="number" id="valueoffood">
+            </div>
+        
+            <div class="col-md-6">
+             <select id="periodofmeasurement" >
+    <option value="ps2">-Please Select</option>
+    <option value="Weekly">Weekly</option>
+    <option value="Montly">Montly</option>
+    <option value="Quaterly">Quaterly</option>
+    <option value="Yearly">Yearly</option>
+  </select>
+                
+            </div>
+        
+    </div>
+      </div>
+    <input type="button" name="previous" id="previous2" class="previous action-button btn btn-outline-secondary" value="Previous Step 2" />
+    <input type="button" name="next" id="next2" class="next action-button btn btn-outline-secondary" value="Next Step 2" />
+    <br><br><br><p style="color: orange">*Any detail submitted in this form will be kept completely confidential</p>
+  </fieldset>
+  
+  <fieldset id="fs3">
+   
+     <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                
+   <p style="color: orange">How much food prep done on site</p> 
+            </div>
+        
+            <div class="col-md-6">
+             <p style="color: orange">How many sites*</p>
+                
+            </div>
+        
+    </div>
+      <div class="row">
+            <div class="col-md-6">
+                
+        <select id="prepdoneonsite" >
+    <option value="ps3">-Please Select-</option>
+    <option value="None">None</option>
+    <option value="Little-25%">Little-25%</option>
+    <option value="Most-75%">Most-75%</option>
+    <option value="All-100%">All-100%</option>
+  </select>
+            </div>
+        
+            <div class="col-md-6">
+          <input type="number" id="howmanysites">
+                
+            </div>
+        
+    </div>
+      </div>
+    <br> <br>
+    <input type="button" name="previous" id="previous3" class="previous action-button btn btn-outline-secondary" value="Previous 3" />
+    <input type="button" name="submit" id="next3" class="submit action-button btn btn-outline-secondary" value="Submit 3" />
+    <br><br><br><p style="color: orange">*Any detail submitted in this form will be kept completely confidential</p>
+  </fieldset>
+  
+   
+</form>
+
+</div>
+
+ <div id="fs4" class="container text-center">
+   <div style="background: black;color: white;height: 30px;padding-top:5px"> <p>Potential impact of Food Waste in your business</p></div><br>
+      <div class="row">
+          <div class="col-md-3 rs">
+            Total Food Waste in kg per year
+          </div><br>
+          <div class="col " id="d1" ></div>
+      </div> <br>
+      <div class="row">
+          <div class="col-md-3 rs">Food Waste in kg per year per site</div><br>
+          <div class="col " id="d2" ></div>
+      </div> <br>
+      <div class="row">
+          <div class="col-md-3 rs">Food Waste in € per year</div><br>
+          <div class="col" id="d3" ></div>
+      </div><br>
+      <div class="row">
+          <div class="col-md-3 rs">Food Waste in € per year</div><br>
+          <div class="col " id="d4" ></div>
+      </div><br>
+      <div class="row">
+          <div class="col-md-3 rs">Total CO2 Footprint</div><br>
+          <div class="col " id="d5" ></div>
+      </div><br><br><br>
+       
+        <h5>Do you want to find out more about Mitakus and how it could help you decreae your cost and CO2 emission ?</h5>
+        <form action="">
+            <input type="text" placeholder="First Name">
+            <input type="text" placeholder="Last Name">
+            <input type="text" placeholder="E-Mail">
+            <input type="submit" value="Send" class="btn btn-secondary">
+        </form>
+        
+  </div>
+
+
+    <script src="js/index.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
