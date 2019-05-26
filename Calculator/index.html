@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <title>My Calculator</title>
+   
+</head>
+<style>
+    body{
+        background-image: url(key.jpg);
+        
+    }
+    #calcu{
+        width: 60%;
+        margin-top: 40px;
+       
+        
+    }
+    #out{
+        position: fixed;
+    }
+    
+    </style>
+<body >
+   <div class="container text-center">
+   
+   <h1 class=" btn btn-success btn-lg" >
+       My Calculator
+       </h1>
+       
+    </div>
+    <div class="container" id="out">
+       <h1 id="d1" class="text-center"></h1>
+       <h1 id="d2" hidden></h1>
+       <h1 id="d3" hidden></h1>
+        
+    </div><br>
+    <div class="container" id="calcu" >
+        <br><br>
+        <div class="row" ><br>
+            <div class="col-lg-3 btn btn-primary 1" ><h3 id="one">1</h3></div>
+            <div class="col-lg-3 btn btn-primary 2" ><h3 id="two">2</h3></div>
+            <div class="col-lg-3 btn btn-primary 3" ><h3 id="three">3</h3></div>
+            <div class="col-lg-3 btn btn-warning pl"><h3 id="plus">+</h3></div>
+        </div>
+        <div class="row"><br>
+            <div class="col-lg-3 btn btn-primary 4" ><h3 id="four">4</h3></div>
+            <div class="col-lg-3 btn btn-primary 5" ><h3 id="five">5</h3></div>
+            <div class="col-lg-3 btn btn-primary 6" ><h3 id="six">6</h3></div>
+            <div class="col-lg-3 btn btn-warning min"><h3 id="minus">-</h3></div>
+        </div>
+        <div class="row"><br>
+            <div class="col-lg-3 btn btn-primary 7" ><h3 id="seven">7</h3></div>
+            <div class="col-lg-3 btn btn-primary 8" ><h3 id="eight">8</h3></div>
+            <div class="col-lg-3 btn btn-primary 9" ><h3 id="nine">9</h3></div>
+            <div class="col-lg-3 btn btn-warning di"><h3 id="divide">/</h3></div>
+        </div>
+        <div class="row"><br>
+            <div class="col-lg-3 btn btn-success eq"><h3 id="equal">=</h3></div>
+            <div class="col-lg-3 btn btn-primary 0" ><h3 id="zero">0</h3></div>
+            <div class="col-lg-3 btn btn-danger cl" ><h3 id="clear">Clear</h3></div>
+            <div class="col-lg-3 btn btn-warning mul"><h3 id="star">*</h3></div>
+        </div>
+    </div>
+   
+    
+    <script>
+    
+        $(".1").click(function(){
+            var one = document.getElementById("one").innerText;
+          
+            document.getElementById('d1').innerHTML+= one;
+            
+            });
+        
+        $(".2").click(function(){
+            var two = document.getElementById("two").innerText;
+
+
+            
+            document.getElementById('d1').innerHTML+= two;
+            });
+        $(".3").click(function(){
+            var three = document.getElementById("three").innerText;
+            
+            document.getElementById('d1').innerHTML+= three;
+            });
+        $(".4").click(function(){
+            var four = document.getElementById("four").innerText;
+            
+            document.getElementById('d1').innerHTML+= four;
+            });
+        $(".5").click(function(){
+            var five = document.getElementById("five").innerText;
+            
+            document.getElementById('d1').innerHTML+= five;
+            });
+        $(".6").click(function(){
+            var six = document.getElementById("six").innerText;
+            
+            document.getElementById('d1').innerHTML+= six;
+            });
+        $(".7").click(function(){
+            var seven = document.getElementById("seven").innerText;
+            
+            document.getElementById('d1').innerHTML+= seven;
+            });
+        $(".8").click(function(){
+            var eight = document.getElementById("eight").innerText;
+
+            document.getElementById('d1').innerHTML+= eight;
+            });
+        $(".9").click(function(){
+            var nine = document.getElementById("nine").innerText;
+        
+            document.getElementById('d1').innerHTML+= nine;
+            });
+        $(".0").click(function(){
+            var zero = document.getElementById("zero").innerText;
+
+            document.getElementById('d1').innerHTML+= zero;
+            });
+        
+        $(".pl").click(function(){
+            document.getElementById("d3").innerHTML = "plus" ;
+           document.getElementById("d2").innerHTML = document.getElementById("d1").innerText;
+            document.getElementById("d1").innerHTML="";
+            
+         
+          
+            });
+        $(".min").click(function(){
+           document.getElementById("d3").innerHTML = "minus" ;
+           document.getElementById("d2").innerHTML = document.getElementById("d1").innerText;
+            document.getElementById("d1").innerHTML="";
+       
+            
+            });
+        $(".di").click(function(){
+            document.getElementById("d3").innerHTML = "divide" ;
+           document.getElementById("d2").innerHTML = document.getElementById("d1").innerText;
+            document.getElementById("d1").innerHTML="";
+
+            
+            });
+        $(".mul").click(function(){
+           document.getElementById("d3").innerHTML = "multiply" ;
+           document.getElementById("d2").innerHTML = document.getElementById("d1").innerText;
+            document.getElementById("d1").innerHTML="";
+            
+           
+            });
+        $(".eq").click(function(){
+            var num1 = document.getElementById("d2").innerText;
+            var num2 = document.getElementById("d1").innerText;
+            var n1 = parseInt(num1);
+            var n2 = parseInt(num2);
+            var add = n1 + n2;
+            var subs = n1 - n2;
+            var multiply = n1 * n2;
+            var division = n1 / n2;
+            
+            var operand = document.getElementById("d3").innerText;
+            if(operand=="plus"){
+                 document.getElementById("d1").innerHTML= add;
+            }
+            if(operand=="minus"){
+                 document.getElementById("d1").innerHTML= subs;
+            }
+            if(operand=="divide"){
+                 document.getElementById("d1").innerHTML= division;
+            }
+            if(operand=="multiply"){
+                 document.getElementById("d1").innerHTML= multiply;
+            }
+            
+            
+           
+            });
+        $(".cl").click(function(){
+        
+            document.getElementById("d1").innerHTML="";
+            
+            });
+     
+           
+        
+    
+    </script>
+</body>
+</html>
